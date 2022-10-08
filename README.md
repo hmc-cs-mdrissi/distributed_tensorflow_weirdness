@@ -3,4 +3,4 @@ This includes a couple scripts to reproduce difference in behavior for Parameter
 
 The log files are also included in the repository. To generate logs just run `python ps_train.py` or `python sync_train.py`. They use subprocess to create a small cluster that you can run locally.
 
-The only libraries needed are tensorflow and portpicker. `pip install tensorflow portpicker` should be sufficient.
+The only libraries needed are tensorflow and portpicker. `pip install tensorflow portpicker` should be sufficient. Python 3.9 was used to produce this although 3.7/3.8 probably work.

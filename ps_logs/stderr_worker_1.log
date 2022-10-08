@@ -1,0 +1,200 @@
+2022-10-07 19:20:09.182639: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-07 19:20:09.186325: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:272] Initialize GrpcChannelCache for job chief -> {0 -> localhost:65532}
+2022-10-07 19:20:09.186378: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:272] Initialize GrpcChannelCache for job ps -> {0 -> localhost:65531}
+2022-10-07 19:20:09.186616: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:272] Initialize GrpcChannelCache for job worker -> {0 -> localhost:65529, 1 -> localhost:65530}
+2022-10-07 19:20:09.186826: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:437] Started server with target: grpc://localhost:65530
+2022-10-07 19:20:09.488631: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:272] Initialize GrpcChannelCache for job chief -> {0 -> localhost:65532}
+2022-10-07 19:20:09.488699: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:272] Initialize GrpcChannelCache for job ps -> {0 -> localhost:65531}
+2022-10-07 19:20:09.488736: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:272] Initialize GrpcChannelCache for job worker -> {0 -> localhost:65529, 1 -> localhost:65530}
+2022-10-07 19:20:09.488872: I tensorflow/core/distributed_runtime/eager/eager_service_impl.cc:279] Creating sync eager service context with rendezvous_id on host C02DT89BMD6R /job:worker/replica:0/task:1
+2022-10-07 19:20:09.973160: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:776] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorSliceDataset/_1"
+op: "TensorSliceDataset"
+input: "Placeholder/_0"
+attr {
+  key: "Toutput_types"
+  value {
+    list {
+      type: DT_FLOAT
+    }
+  }
+}
+attr {
+  key: "_cardinality"
+  value {
+    i: 9
+  }
+}
+attr {
+  key: "is_files"
+  value {
+    b: false
+  }
+}
+attr {
+  key: "metadata"
+  value {
+    s: "\n\024TensorSliceDataset:0"
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 1
+        }
+      }
+    }
+  }
+}
+experimental_type {
+  type_id: TFT_PRODUCT
+  args {
+    type_id: TFT_DATASET
+    args {
+      type_id: TFT_PRODUCT
+      args {
+        type_id: TFT_TENSOR
+        args {
+          type_id: TFT_FLOAT
+        }
+      }
+    }
+  }
+  args {
+    type_id: TFT_DATASET
+    args {
+      type_id: TFT_PRODUCT
+      args {
+        type_id: TFT_TENSOR
+        args {
+          type_id: TFT_FLOAT
+        }
+      }
+    }
+  }
+}
+
+2022-10-07 19:20:10.023085: W tensorflow/core/framework/dataset.cc:768] Input of GeneratorDatasetOp::Dataset will not be optimized because the dataset does not implement the AsGraphDefInternal() method needed to apply optimizations.
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]
+[[3]
+ [4]
+ [5]]
+[[6]
+ [7]
+ [8]]
+[[0]
+ [1]
+ [2]]

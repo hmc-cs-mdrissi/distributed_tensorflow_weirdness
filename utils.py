@@ -1,11 +1,11 @@
+from typing import Any, Dict, Sequence
+
 import json
 import os
 import subprocess
 import sys
-from typing import Any, Dict, Sequence
 
 from portpicker import pick_unused_port
-
 from toy_train import main
 
 
@@ -29,8 +29,9 @@ def create_tf_configs(worker_count: int, ps_count: int):
 
     return tf_configs
 
-def run_tasks(distributed_type: str, tf_configs: Sequence[Dict[str, Any]], log_dir: str):
-    command = [sys.executable, "toy_train.py", "--distributed-type", distributed_type]
+
+def run_tasks(tf_configs: Sequence[Dict[str, Any]], log_dir: str):
+    command = [sys.executable, "toy_train.py"]
     for tf_config in tf_configs[:-1]:
         env = os.environ.copy()
         env["TF_CONFIG"] = json.dumps(tf_config)
@@ -45,4 +46,4 @@ def run_tasks(distributed_type: str, tf_configs: Sequence[Dict[str, Any]], log_d
 
     chief_config = tf_configs[-1]
     os.environ["TF_CONFIG"] = json.dumps(chief_config)
-    main(distributed_type)
+    main()
